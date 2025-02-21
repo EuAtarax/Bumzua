@@ -34,7 +34,7 @@ default_data = {
 }
 
 # Nutze st.data_editor (aktuelle Streamlit-Version) für eine interaktive Tabelle
-drinks_df = st.sidebar.data_editor(
+drinks_df = st.data_editor(
     pd.DataFrame(default_data),
     num_rows="dynamic",
     use_container_width=True
